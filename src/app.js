@@ -29,7 +29,7 @@ app.get('/', (request, response)=>{
     response.render('index');
 });
 
-app.get('/chat.pug', (request, response)=>{
+app.get('/chat', (request, response)=>{
     //Un paramètre pseudo est obligatoire pour accéder à cette route
     if(!request.query.pseudo){
         return response.redirect('/'); //Redirige vers page de login
