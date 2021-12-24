@@ -4,7 +4,8 @@
   "description": "Un projet réalisé avec Node.js",
   "main": "./src/app.js",
   "scripts": {
-    "dev": "nodemon ./src/app.js"
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js"
   },
   "author": "BManta",
   "license": "MIT",
