@@ -1,6 +1,6 @@
 // const socket = io('http://localhost:1337/');
 // CLIENT
-const socket = io('/');
+const socket = io('/chat');
 
 // Récupérer le pseudo dans l'URL
 const URLQuery = Object.fromEntries(
