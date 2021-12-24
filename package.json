@@ -1,0 +1,23 @@
+{
+  "name": "nodes-chat",
+  "version": "1.0.0",
+  "description": "Un projet réalisé avec Node.js",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "BManta",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "seed-color": "^2.0.1",
+    "socket.io": "^4.4.0",
+    "xss": "^1.0.10"
+  }
+}

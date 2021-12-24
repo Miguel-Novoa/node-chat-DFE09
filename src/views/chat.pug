@@ -1,0 +1,22 @@
+extends layout.pug 
+
+block variables 
+    - const pageTitle = 'Chat';
+
+block scripts 
+    script(src="/socket.io/socket.io.js" defer)
+    script(src="/js/chat.js" defer)
+
+block content 
+    h1 Bienvenue sur le chat #{pseudo} !
+
+    #chat-app 
+        .chat-users 
+            h2 Utilisateurs en ligne 
+            ul
+
+        .chatbox-area 
+            .chatbox-messages
+
+            form(action="/chat.pug" method="get").chatbox-form
+                input(type="text" name="message" placeholder="Votre message (Entrée pour valider)")
