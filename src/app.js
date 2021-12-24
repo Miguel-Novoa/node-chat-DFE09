@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require('socket.io')(server);
 
-const port = 1337;
+const port = process.env.PORT || 1337;
 
 app.use(helmet());
 app.use(morgan('tiny'));
